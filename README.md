@@ -1,4 +1,7 @@
 # AmazingBooks
 Google Maps API
 
-Problems with SavedBooksFragment, null 
+Added Detailed Screen insted of Webview
+Added Link to Browser(Buy Link) - if available
+
+-Problems with SavedBooksFragment, null(Buy Link) 
