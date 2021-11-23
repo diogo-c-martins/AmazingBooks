@@ -6,4 +6,6 @@
     <string name="search_books">Search Books</string>
     <string name="books">Books</string>
     <string name="search">Search...</string>
+    <string name="buy_link">BUY LINK</string>
+    <string name="buy_this_book">Buy this Book</string>
 </resources>

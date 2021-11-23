@@ -24,7 +24,7 @@ class BooksViewModel(
     var searchBooksResponse: BookResponse? = null
 
     init {
-        getBooks("Mobile")
+        getBooks("ios")
     }
 
     //Coroutine(as long as viewModel)

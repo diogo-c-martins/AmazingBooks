@@ -10,7 +10,7 @@ import com.example.amazingbooksapp.models.Item
 
 @Database(
     entities = [Item::class],
-    version = 1,
+    version = 3,
     exportSchema = false
 )
 @TypeConverters(Converters::class)
@@ -31,6 +31,6 @@ abstract class ItemDatabase : RoomDatabase() {
                 context.applicationContext,
                 ItemDatabase::class.java,
                 "item_db.db"
-            ).build()
+            ).fallbackToDestructiveMigration().build()
     }
 }

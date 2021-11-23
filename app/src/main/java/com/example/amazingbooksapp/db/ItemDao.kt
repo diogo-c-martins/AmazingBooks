@@ -10,7 +10,7 @@ interface ItemDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun upsert(item: Item): Long
 
-    //
+
     @Query("SELECT * FROM items")
     fun getAllBooks(): LiveData<List<Item>>
 

@@ -18,5 +18,7 @@ data class Item(
     @SerializedName("selfLink")
     val selfLink: String,
     @SerializedName("volumeInfo")
-    val volumeInfo: VolumeInfo
+    val volumeInfo: VolumeInfo,
+    @SerializedName("saleInfo")
+    val SaleInfo: SaleInfo?
 ) : Serializable

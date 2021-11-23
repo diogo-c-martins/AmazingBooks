@@ -27,7 +27,7 @@ class NewBooksFragment : Fragment(R.layout.fragment_new_books) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         viewModel = (activity as BooksActivity).viewModel
-       setupRecyclerView()
+        setupRecyclerView()
 
         booksAdapter.setOnItemClickListener {
             val bundle = Bundle().apply{

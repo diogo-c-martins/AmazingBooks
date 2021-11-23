@@ -2,6 +2,7 @@ package com.example.amazingbooksapp.db
 
 import androidx.room.TypeConverter
 import com.example.amazingbooksapp.models.ImageLinks
+import com.example.amazingbooksapp.models.SaleInfo
 import com.example.amazingbooksapp.models.VolumeInfo
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
@@ -9,12 +10,22 @@ import com.google.gson.reflect.TypeToken
 class Converters {
    @TypeConverter
     fun fromImageLink(imageLinks: ImageLinks): String?{
-        return imageLinks.thumbnail
+        return imageLinks.smallThumbnail
     }
 
     @TypeConverter
-    fun toImageLink(thumbnail: String): ImageLinks {
-        return ImageLinks(thumbnail)
+    fun toImageLink(smallThumbnail: String): ImageLinks {
+        return ImageLinks(smallThumbnail)
+    }
+
+    @TypeConverter
+    fun fromSaleInfo(buyLink: SaleInfo): String?{
+        return buyLink.buyLink
+    }
+
+    @TypeConverter
+    fun toSaleInfo(buyLink: String): SaleInfo {
+        return SaleInfo(buyLink)
     }
 
     @TypeConverter

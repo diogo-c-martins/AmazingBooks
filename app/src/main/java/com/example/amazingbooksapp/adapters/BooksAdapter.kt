@@ -10,6 +10,7 @@ import com.bumptech.glide.Glide
 import com.example.amazingbooksapp.R
 import com.example.amazingbooksapp.models.Item
 import kotlinx.android.synthetic.main.item_preview.view.*
+import com.example.amazingbooksapp.utils.AppNameGlideModule
 
 class BooksAdapter : RecyclerView.Adapter<BooksAdapter.ItemViewHolder>() {
 
@@ -40,7 +41,8 @@ class BooksAdapter : RecyclerView.Adapter<BooksAdapter.ItemViewHolder>() {
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val item = differ.currentList[position]
         holder.itemView.apply {
-            Glide.with(this).load(item.volumeInfo.imageLinks.thumbnail).into(ivBookImage)
+            //Glide.with(this).load(item.volumeInfo.imageLinks.smallThumbnail).into(ivBookImage)
+            //Glide.with(this).load("http://goo.gl/gEgYUd").into(ivBookImage);
             tvTitle.text = item.volumeInfo.title
             tvDescription.text = item.volumeInfo.subtitle
             setOnClickListener {
