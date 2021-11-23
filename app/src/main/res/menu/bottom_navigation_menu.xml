@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/newBooksFragment"
+        android:title="@string/books"
+        android:icon="@drawable/ic_all_books" />
+
+    <item android:id="@+id/savedBooksFragment"
+        android:title="@string/saved_books"
+        android:icon="@drawable/ic_favorite" />
+
+    <item android:id="@+id/searchBooksFragment"
+        android:title="@string/search_books"
+        android:icon="@drawable/ic_new_books" />
+
+</menu>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/books_nav_graph"
+    app:startDestination="@+id/NewBooksFragment">
+
+    <fragment
+        android:id="@+id/NewBooksFragment"
+        android:name="com.example.amazingbooksapp.ui.fragments.NewBooksFragment"
+        android:label="NewBooksFragment" >
+
+        <action
+            android:id="@+id/action_NewBooksFragment_to_ItemFragment"
+            app:destination="@id/ItemFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/savedBooksFragment"
+        android:name="com.example.amazingbooksapp.ui.fragments.SavedBooksFragment"
+        android:label="SavedBooksFragment" >
+
+        <action
+            android:id="@+id/action_savedBooksFragment_to_ItemFragment"
+            app:destination="@id/ItemFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/searchBooksFragment"
+        android:name="com.example.amazingbooksapp.ui.fragments.SearchBooksFragment"
+        android:label="SearchBooksFragment" >
+        <action
+            android:id="@+id/action_searchBooksFragment_to_ItemFragment"
+            app:destination="@id/ItemFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/ItemFragment"
+        android:name="com.example.amazingbooksapp.ui.fragments.ItemFragment"
+        android:label="ItemFragment" >
+
+        <argument
+            android:name="item"
+            app:argType="com.example.amazingbooksapp.models.Item" />
+    </fragment>
+</navigation>

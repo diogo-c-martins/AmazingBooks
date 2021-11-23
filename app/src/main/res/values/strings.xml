@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MVVMNewsApp</string>
+    <string name="description">DESCRIPTION</string>
+    <string name="title">TITLE</string>
+    <string name="saved_books">Saved Books</string>
+    <string name="search_books">Search Books</string>
+    <string name="books">Books</string>
+    <string name="search">Search...</string>
+</resources>
